@@ -28,4 +28,12 @@ class MyCar
   def spray_paint(color)
     self.color = color
   end
+
+  def self.gas_mileage(gallons, miles)
+    puts "#{miles / gallons} miles per gallon of gas"
+  end
+
+  def to_s
+    "My car is a #{color}, #{year}, #{@model}!"
+  end
 end
