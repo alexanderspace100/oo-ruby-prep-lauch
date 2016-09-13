@@ -14,7 +14,8 @@ class MyCar
   	end
 
   	def brake(speed)
-    	@current_speed -= speed
+    	@current_sp
+      eed -= speed
   	end
 
   def current_speed
