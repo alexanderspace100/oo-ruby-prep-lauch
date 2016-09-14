@@ -43,6 +43,16 @@ class Vehicle
     self.color = color
     puts "You new #{color} paint job looks great!"
   end
+
+  def age
+    "Your car is #{years_old} years old."
+  end
+
+  private
+
+  def years_old
+    Time.now.year - self.year
+  end
 end
 
 class MyCar < Vehicle
@@ -62,3 +72,6 @@ end
 # puts MyCar.ancestors
 # puts MyTruck.ancestors
 # puts Vehicle.ancestors
+
+ford = MyCar.new(2007, 'ford', 'red')
+puts ford.age
